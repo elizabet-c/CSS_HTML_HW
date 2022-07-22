@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Elizabet's Routine Page</title>
         <style>
@@ -17,8 +23,11 @@
                 display: flex;
                 min-width: 40px;
                 padding: 10px;
-
+                font-family: 'Indie Flower', cursive;
+                font-size: 30px;
             }
+
+
             li {
                 list-style-type: none;
                 margin: 0;
@@ -31,6 +40,7 @@
             li {
                 color: white;
                 float: left;
+                font-family: 'Archivo', sans-serif;
             }
 
             li a, .dropbtn {
@@ -77,7 +87,7 @@
                 color: white;
                 width: 20px;
                 height: 20px;
-                background-color: rgb(43, 160, 168);
+                background-color: rgb(0, 253, 232);
                 filter: invert(1);
                 background-size: contain;
                 }
@@ -93,41 +103,81 @@
 
             form {
                 display: inline-block;
+                min-width: 700px;
             }
 
             input {
                 display: inline;
+            }
+
+            #footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+
+            #footer .dropdown-content {
+                bottom: 50px;
+            }
+
+            #searchbar {
+                padding: 20px;
             }
         </style>
     </head>
     <body>
         <nav id="test">
             <div id="logo">
-                Logo
+                EC
             </div>
             <ul id="pages">
-                <li><a href="#">Home</a></li>
+                <li><a href="routine.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Portfolio</a>
+                    <a class="dropbtn">Portfolio</a>
                     <div class="dropdown-content">
-                        <a href="#">Cleansers & Serums</a>
-                        <a href="#">Moisturizers & SPF</a>
+                        <a href="c_s.html">Cleansers & Serums</a>
+                        <a href="m_s.html">Moisturizers & SPF</a>
                     </div>
                 </li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_me.html">About Me</a></li>
             </ul>
             <form class="searchbar">
-                <input type="search" />
-                <img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png" alt="search-icon" id="search-icon"/>
+                <div id="searchbar">
+                    <input type="search" size="100"/>
+                    <a href="#" ><img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png" alt="search-icon" id="search-icon"/></a>
+                </div>
             </form>
             <div id="text">
-                <li>SIGN IN / DEALER LOCATOR</li>
+                <a href="#"><li>SIGN IN / DEALER LOCATOR</li></a>
                 <div>
-                    <li>VIEW CART</li>
+                    <a href="#"><li>VIEW CART</li></a>
                     <li><img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="cart-icon" id="cart-icon"/></li>
                 </div>
             </div>
         </nav>
+        <h1>Welcome to my Page all about Skincare!</h1>
+        <h2>I have learned a lot about skincare in the past two years through videos on social media and additional research online.</h2>
+        <footer id="footer">
+            <ul id="pages">
+                <li><a href="routine.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="c_s.html">Cleansers & Serums</a>
+                        <a href="m_s.html">Moisturizers & SPF</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+            </ul>
+            <div id="logo">
+                EC
+            </div>
+        </footer>
     </body>
 </html>
