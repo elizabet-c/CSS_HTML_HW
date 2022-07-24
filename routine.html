@@ -27,21 +27,27 @@
                 font-size: 30px;
             }
 
-
-            li {
+            #footer li {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-            }
-
-
-            
-            li {
                 color: white;
                 float: left;
                 font-family: 'Archivo', sans-serif;
             }
+
+            #test li {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                color: white;
+                float: left;
+                font-family: 'Archivo', sans-serif;
+            }
+
+
 
             li a, .dropbtn {
                 display: block;
@@ -111,7 +117,7 @@
             }
 
             #footer {
-                position: fixed;
+                position: sticky;
                 left: 0;
                 bottom: 0;
                 width: 100%;
@@ -135,16 +141,16 @@
                 EC
             </div>
             <ul id="pages">
-                <li><a href="routine.html">Home</a></li>
-                <li class="dropdown">
+                <li id="specific"><a href="routine.html">Home</a></li>
+                <li id="specific" class="dropdown">
                     <a class="dropbtn">Portfolio</a>
                     <div class="dropdown-content">
                         <a href="c_s.html">Cleansers & Serums</a>
                         <a href="m_s.html">Moisturizers & SPF</a>
                     </div>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about_me.html">About Me</a></li>
+                <li id="specific"><a href="contact.html">Contact</a></li>
+                <li id="specific"><a href="about_me.html">About Me</a></li>
             </ul>
             <form class="searchbar">
                 <div id="searchbar">
@@ -156,24 +162,29 @@
                 <a href="#"><li>SIGN IN / DEALER LOCATOR</li></a>
                 <div>
                     <a href="#"><li>VIEW CART</li></a>
-                    <li><img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="cart-icon" id="cart-icon"/></li>
+                    <li id="specific"><img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" alt="cart-icon" id="cart-icon"/></li>
                 </div>
             </div>
         </nav>
         <h1>Welcome to my Page all about Skincare!</h1>
         <h2>I have learned a lot about skincare in the past two years through videos on social media and additional research online.</h2>
+        <p>Feel free to navigate through my first html page styled with CSS. I am definitely a beginner who faced some struggles
+            making this website. However, I have learned so much, and I know I will continue to expand my skills going forward. If you are
+            genuinely curious about how to structure a simple, yet effective skin care routine, navigate to my portfolio pages.
+        </p>
+        <h3>Thank you so much for visiting!</h3>
         <footer id="footer">
             <ul id="pages">
-                <li><a href="routine.html">Home</a></li>
-                <li class="dropdown">
+                <li id="specific"><a href="routine.html">Home</a></li>
+                <li class="dropdown" id="specific">
                     <a class="dropbtn">Portfolio</a>
                     <div class="dropdown-content">
                         <a href="c_s.html">Cleansers & Serums</a>
                         <a href="m_s.html">Moisturizers & SPF</a>
                     </div>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about_me.html">About Me</a></li>
+                <li id="specific"><a href="contact.html">Contact</a></li>
+                <li id="specific"><a href="about_me.html">About Me</a></li>
             </ul>
             <div id="logo">
                 EC
